@@ -13,13 +13,15 @@ Les possibilités de personnalisation sont les suivantes :
 
 Tout d'abord, il vous faut copier ce morceau de code dans votre HTML :
 
-`<div class="myhero-element" data-myheroURL="../img/image-name.jpg">
+```
+<div class="myhero-element" data-myheroURL="../img/image-name.jpg">
   <!-- Ce block ne sert que si vous souhaiter utiliser un filter. -->
   <div class="myhero-filter--none" data-fx="" data-filter-opacity="1"></div>
   <div class="myhero-content">
     <!-- CONTENT HERE -->
   </div>
-</div>`
+</div>
+```
 
 Pour personnaliser ce plugin, il y a plusieurs choses de base à faire :
 
@@ -31,11 +33,11 @@ Pour personnaliser ce plugin, il y a plusieurs choses de base à faire :
 - data-url : "../img/image-name.jpg"
 
 #### 4. Concernant les filtres (facultatif). Dans ce cas, personnaliser avec les <i>data</i> :
-- data-opacity : permet de doser la visibilité du filtre appliqué
-- data-color1 : indiquer une couleur primaire pour appliquer un filtre couleur
-- data-color2 : indiquer une seconde couleur pour réaliser un effet dégradé
-- data-gradient-direction : indiquer une valeur en degrée, e.g. : "68deg" pour orienter le gradient dans la direction désirée.
-- data-fx : personnaliser le filtre color/gradient avec un mode de fusion. Il n'y a que 2 valeurs disponibles ( "hue" et "color" )
-- data-blur: à venir...
+- <b>data-opacity</b> : permet de doser la visibilité du filtre appliqué
+- <b>data-color1</b> : indiquer une couleur primaire pour appliquer un filtre couleur
+- <b>data-color2</b> : indiquer une seconde couleur pour réaliser un effet dégradé
+- <b>data-gradient-direction</b> : indiquer une valeur en degrée, e.g. : "68deg" pour orienter le gradient dans la direction désirée.
+- <b>data-fx</b> : personnaliser le filtre color/gradient avec un mode de fusion. Il n'y a que 2 valeurs disponibles ( "hue" et "color" )
+- <b>data-blur</b>: à venir...
 
 Et voilà, tout devrait fonctionner. Ciao !
