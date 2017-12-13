@@ -1,14 +1,8 @@
-// BASE
 .myhero-element {
     display: block;
     width: 100vw; height: 100vh;
     @include flex($d:column, $w:nowrap, $j-c:center, $a-i:center);
     background-size: cover;
-    background-position: center center; // position-par defaut
-}
-
-.myhero--content {
-  z-index: 1;
 }
 
 .myhero-filter {
@@ -17,33 +11,6 @@
   @include posa($top:50%, $left:50%, $x:-50%, $y:-50%);
 }
 
-// POSITION
-.myhero-element {
-  &--TL {
-    background-position: top left;
-  }
-  &--TC {
-    background-position: top center;
-  }
-  &--TR {
-    background-position: top right;
-  }
-  &--CL {
-    background-position: center left;
-  }
-  &--CC {
-    background-position: center center;
-  }
-  &--CR {
-    background-position: center right;
-  }
-  &--BL {
-    background-position: bottom left;
-  }
-  &--BC {
-    background-position: bottom center;
-  }
-  &--BR {
-    background-position: bottom right;
-  }
+.myhero-element > *:not(.myhero-filter) {
+  z-index: 1;
 }

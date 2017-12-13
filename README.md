@@ -8,26 +8,31 @@ Les possibilités de personnalisation sont les suivantes :
 - Ajout un filtre couleur ou dégradé
 - utiliser des modes de fusions pour personnalisés les filtres (Hue/Color)
 
+## Demo
+[Lien vers la demo](http://cepegra-labs.be/webdesign/2017/fdef/web/04_Js/myhero-plugin-master/dist/)
 
 ## Comment s'utilise t'il ?
 
 Tout d'abord, il vous faut copier ce morceau de code dans votre HTML :
 
 ```
-<div class="myhero-element" data-myheroURL="../img/image-name.jpg">
+<div class="myhero-element myhero-element--CC" data-url="../img/pexels-photo-132037.jpeg">
+
   <!-- Ce block ne sert que si vous souhaiter utiliser un filter. -->
-  <div class="myhero-filter--none" data-fx="" data-filter-opacity="1"></div>
+  <div class="myhero-filter" data-opacity="1" data-fx="hue" data-color1="red" data-color2="" data-gradient-direction="90deg"></div>
+
   <div class="myhero-content">
     <!-- CONTENT HERE -->
   </div>
+
 </div>
 ```
 
 Pour personnaliser ce plugin, il y a plusieurs choses de base à faire :
 
-#### 1. Copier le fichier "myhero-style.css" dans votre dossier de style CSS et ajouter la balise `<link rel="stylesheet" href="css/myhero-style.css">` après vos autres feuilles de style dans votre HTML.
+#### 1. Copier le fichier "myhero-style.css" dans votre dossier de style CSS et ajouter la balise ```<link rel="stylesheet" href="css/myhero-style.css">``` après vos autres feuilles de style dans votre HTML.
 
-#### 2. Copier le fichier "myhero.js" dans votre dossier JS et ajouter la balise `<script src="js/myhero.js"></script>` à la fin de votre balise `<body></body>`
+#### 2. Copier le fichier "myhero.js" dans votre dossier JS et ajouter la balise ```<script src="js/myhero.js"></script>``` à la fin de votre balise ```<body></body>```
 
 #### 3. Indiquer l'URL de votre image dans le data de <b>.myhero-element</b> pour afficher l'image :
 - data-url : "../img/image-name.jpg"
@@ -38,6 +43,7 @@ Pour personnaliser ce plugin, il y a plusieurs choses de base à faire :
 - <b>data-color2</b> : indiquer une seconde couleur pour réaliser un effet dégradé
 - <b>data-gradient-direction</b> : indiquer une valeur en degrée, e.g. : "68deg" pour orienter le gradient dans la direction désirée.
 - <b>data-fx</b> : personnaliser le filtre color/gradient avec un mode de fusion. Il n'y a que 2 valeurs disponibles ( "hue" et "color" )
-- <b>data-blur</b>: à venir...
+- <b>data-blur</b>: Indiquer une valeur chiffré, l'unité est en ' px'
+- <b>data-gray</b>: 0-100 (%)
 
 Et voilà, tout devrait fonctionner. Ciao !

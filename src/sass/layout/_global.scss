@@ -6,15 +6,12 @@
 %text-center {
   text-align: center;
 }
-
 .myhero-body {
   font-family: 'Quicksand', sans-serif;
   overflow-x: hidden;
 }
 
 .myhero {
-  &__intro-demo {
-  }
   &__title-container {
     border: 8px solid #000;
     padding: 2rem 4rem;
