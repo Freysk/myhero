@@ -11,8 +11,6 @@ Les possibilités de personnalisation sont les suivantes :
 
 ## Comment s'utilise t'il ?
 
-### Pour les images
-
 Tout d'abord, il vous faut copier ce morceau de code dans votre HTML :
 
 `<div class="myhero-element" data-myheroURL="../img/image-name.jpg">
@@ -29,4 +27,15 @@ Pour personnaliser ce plugin, il y a plusieurs choses de base à faire :
 
 #### 2. Copier le fichier "myhero.js" dans votre dossier JS et ajouter la balise `<script src="js/myhero.js"></script>` à la fin de votre balise `<body></body>`
 
-#### 3. Indiquer le lien de votre image dans le `data-myheroURL=" HERE "`
+#### 3. Indiquer l'URL de votre image dans le data de <b>.myhero-element</b> pour afficher l'image :
+- data-url : "../img/image-name.jpg"
+
+#### 4. Concernant les filtres (facultatif). Dans ce cas, personnaliser avec les <i>data</i> :
+- data-opacity : permet de doser la visibilité du filtre appliqué
+- data-color1 : indiquer une couleur primaire pour appliquer un filtre couleur
+- data-color2 : indiquer une seconde couleur pour réaliser un effet dégradé
+- data-gradient-direction : indiquer une valeur en degrée, e.g. : "68deg" pour orienter le gradient dans la direction désirée.
+- data-fx : personnaliser le filtre color/gradient avec un mode de fusion. Il n'y a que 2 valeurs disponibles ( "hue" et "color" )
+- data-blur: à venir...
+
+Et voilà, tout devrait fonctionner. Ciao !
