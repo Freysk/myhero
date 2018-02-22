@@ -9,7 +9,7 @@ Les possibilités de personnalisation sont les suivantes :
 - utiliser des modes de fusions pour personnalisés les filtres (Hue/Color)
 
 ## Demo
-[Lien vers la demo](http://cepegra-labs.be/webdesign/2017/fdef/web/04_Js/myhero-plugin-master/dist/)
+[Lien vers la demo](http://cepegra-labs.be/webdesign/2017/fdef/web/_html-css-js/_plugins-js/myhero-plugin-master/dist/)
 
 ## Comment s'utilise t'il ?
 
